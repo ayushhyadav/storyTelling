@@ -29,7 +29,7 @@ export default class Home extends Component {
      </View> 
      <View style={{width:'45%',borderRadius:10,}}>
           <Image style={{width:'100%',borderRadius:10,}} source={require('../Images/fair.png')} />
-          <TouchableOpacity style={{position:'absolute',marginTop:140,backgroundColor:'#6EF06F',width:'90%',textAlign:'center',height:35,alignItems:'center',alignSelf:'center',borderRadius:5,justifyContent:'center'}} > 
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Uploadimg')} style={{position:'absolute',marginTop:140,backgroundColor:'#6EF06F',width:'90%',textAlign:'center',height:35,alignItems:'center',alignSelf:'center',borderRadius:5,justifyContent:'center'}} > 
      <Text  style={{fontSize:18,fontWeight:'600',color:'white'}}>
       Meet The Fairy
       </Text>
@@ -40,7 +40,7 @@ export default class Home extends Component {
           <View style={{width:"45%",borderRadius:10}}>
           
           <Image style={{width:'100%',borderRadius:10,}} source={require('../Images/OBJECTS.png')} />
-          <TouchableOpacity style={{position:'absolute',marginTop:140,backgroundColor:'#6EF06F',width:'90%',textAlign:'center',height:35,alignItems:'center',alignSelf:'center',borderRadius:5,justifyContent:'center'}} > 
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Giftmassage')} style={{position:'absolute',marginTop:140,backgroundColor:'#6EF06F',width:'90%',textAlign:'center',height:35,alignItems:'center',alignSelf:'center',borderRadius:5,justifyContent:'center'}} > 
      <Text  style={{fontSize:18,fontWeight:'600',color:'white'}}>
       Gift & Messages
       </Text>
@@ -57,7 +57,6 @@ export default class Home extends Component {
      </TouchableOpacity >
           </View> 
           </View>
-
           <View style={{display:'flex',flexDirection:'row',justifyContent:'space-around',marginTop:40}}>
             <View style={{width:'18%',alignItems:'center',borderRadius:90,height:75,alignContent:'center', backgroundColor:'#F2F2F2'}}>
             <Image style={{marginTop:10}}source={require('../Images/Group(5).png')} />

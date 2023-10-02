@@ -18,6 +18,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Screenprocess from './Screens/Screenprocess';
 import Front from './Screens/Front';
 import Home from './Screens/Home';
+import Uploadimg from './Screens/Uploadimg';
+import Giftmassage from './Screens/Giftmassage';
+import Preview from './Screens/Preview';
+import ChooseGift from './Screens/ChooseGift';
 
 const Stack = createNativeStackNavigator();
 export default class App extends Component {
@@ -34,9 +38,10 @@ export default class App extends Component {
       <Stack.Navigator screenOptions={{headerShown:false}}>
     
         <Stack.Screen name="Home" component={Home} /> 
-         {/* <Stack.Screen name="Screenprocess" component={Screenprocess} /> */}
-         
-
+         <Stack.Screen name="Uploadimg" component={Uploadimg} />
+         <Stack.Screen name="Giftmassage" component={Giftmassage} />
+         <Stack.Screen name="Preview" component={Preview} />
+         <Stack.Screen name="ChooseGift" component={ChooseGift} />
       </Stack.Navigator>
     </NavigationContainer>
     )
