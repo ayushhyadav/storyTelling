@@ -30,7 +30,7 @@ consectetur. Lorem ipsum dolor sit
           </View>
          
             <View style={{ marginTop:25, display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '100%', flexDirection: 'row',alignSelf:'center',alignContent:'center' }}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('Preview')} style={{width:'50%',alignItems:'center'}}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('ChooseMassege')} style={{width:'50%',alignItems:'center'}}>
                  
             <View style={{ width: '45%', borderRadius: 10, justifyContent: 'center', alignItems: 'center', height: 85, backgroundColor: '#3DE17B' }}>
             {/* <Text style={{color:'white',margin:4}}>+</Text>  */}

@@ -84,8 +84,8 @@ export default class Home extends Component {
           
           <Image source={require('../Images/carbon_book.png')} />
           </TouchableOpacity>
-          <TouchableOpacity>
-          <Image source={require('../Images/Group.png')} />
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('ChooseFairy')}>
+          <Image  source={require('../Images/Group.png')} />
           </TouchableOpacity>
           <TouchableOpacity>
           <Image source={require('../Images/Vector(4).png')} />

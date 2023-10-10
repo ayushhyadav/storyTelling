@@ -22,6 +22,8 @@ import Uploadimg from './Screens/Uploadimg';
 import Giftmassage from './Screens/Giftmassage';
 import Preview from './Screens/Preview';
 import ChooseGift from './Screens/ChooseGift';
+import ChooseMassege from './Screens/ChooseMassege';
+import ChooseFairy from './Screens/ChooseFairy';
 
 const Stack = createNativeStackNavigator();
 export default class App extends Component {
@@ -42,6 +44,8 @@ export default class App extends Component {
          <Stack.Screen name="Giftmassage" component={Giftmassage} />
          <Stack.Screen name="Preview" component={Preview} />
          <Stack.Screen name="ChooseGift" component={ChooseGift} />
+         <Stack.Screen name="ChooseMassege" component={ChooseMassege} />
+         <Stack.Screen name="ChooseFairy" component={ChooseFairy} />
       </Stack.Navigator>
     </NavigationContainer>
     )
